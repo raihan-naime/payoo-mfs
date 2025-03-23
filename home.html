@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Home Page</title>
+
+    <!-- daisy ui cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone bg-slate-300">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display text-white grid place-content-center">
+
+                <!-- available balance -->
+                <div class="stats shadow bg-slate-500 mb-5">
+                    <div class="stat">
+
+                        <div class="stat-value">89400</div>
+                        <!-- <p>Available Balance</p> -->
+                        <div class="stat-desc text-2xl text-red-200">Available Balance</div>
+                    </div>
+                </div>
+                <hr class="mb-5">
+                <!-- user action buttons -->
+                <div>
+                    <button class="btn btn-lg">Add Money</button>
+                    <button class="btn btn-lg">Cash Out</button>
+                </div>
+                <hr class="my-5">
+
+                <!-- add money form start -->
+                <fieldset class="fieldset">
+                    <label class="fieldset-label">Amount</label>
+                    <input id="input-add-money" type="text" class="input text-black" placeholder="Amount" />
+                    <label class="fieldset-label">Pin</label>
+                    <input id="input-pin-number" type="password" class="input text-black" placeholder="Pin Number" autocomplete="off" required/>
+                    
+                    <button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
+                </fieldset>
+
+                <!-- add money from end -->
+            </div>
+        </div>
+    </main>
+    <script src="style/home.js"></script>
+</body>
+
+</html>
