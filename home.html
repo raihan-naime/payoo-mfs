@@ -21,7 +21,7 @@
                 <div class="stats shadow bg-slate-500 mb-5">
                     <div class="stat">
 
-                        <div id="account-balance" class="stat-value">89400</div>
+                        <div id="account-balance" class="stat-value">1000</div>
                         <!-- <p>Available Balance</p> -->
                         <div class="stat-desc text-2xl text-red-200">Available Balance</div>
                     </div>
@@ -35,20 +35,35 @@
                 <hr class="my-5">
 
                 <!-- add money form start -->
-                <fieldset class="fieldset">
+                <fieldset class="fieldset hidden">
                     <label class="fieldset-label">Amount</label>
                     <input id="input-add-money" type="text" class="input text-black" placeholder="Amount" />
                     <label class="fieldset-label">Pin</label>
-                    <input id="input-pin-number" type="password" class="input text-black" placeholder="Pin Number" autocomplete="off" required/>
-                    
+                    <input id="input-pin-number" type="password" class="input text-black" placeholder="Pin Number"
+                        autocomplete="off" required />
+
                     <button id="btn-add-money" class="btn btn-neutral mt-4">Add Money</button>
                 </fieldset>
-
                 <!-- add money from end -->
+
+                <!-- cashOot start -->
+                <fieldset class="fieldset">
+                    <label class="fieldset-label">Amount</label>
+                    <input id="input-cash-out" type="text" class="input text-black" placeholder="Cash Out Amount" />
+                    <label class="fieldset-label">Pin</label>
+                    <input id="cash-out-pin" type="password" class="input text-black" placeholder="Pin Number"
+                        autocomplete="off" required />
+
+                    <button id="btn-cash-out" class="btn btn-neutral mt-4">Cash Out</button>
+                </fieldset>
+                <!-- cashOot end -->
+
             </div>
         </div>
     </main>
-    <script src="style/home.js"></script>
+    <!-- <script src="style/home.js"></script> -->
+    <script src="style/addmoney.js"></script>
+    <script src="style/cashout.js"></script>
 </body>
 
 </html>

@@ -23,7 +23,6 @@ document.getElementById('btn-add-money')
 
         // Step-3: verify Pin number
         // wrong way to validate pin number
-        let newBalance = 0;
         if(inputPinNumber === '1111'){
 
             // Step-4: get the current balance
